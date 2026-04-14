@@ -1,5 +1,211 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "Annie Use Your Telescope", cursive;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;  /* sirve para el dezplazamiento suave al hacer clic en un enlace */
+}
+
+body{
+    color: white; /* color del texto */
+    background: #000; /*  color del fondo*/
+}
+/*
+--------------------------------------------------------------
+1. Navegacion fija
+*/
+header nav{
+    top:0;
+    width: 100%;
+    background: black;
+    padding: 15px;
+    z-index: 1000;/* Asegurar que este por encima de otros elementos*/
+    position: fixed; /* Sirve para fijar el menu en la pantalla*/
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+header nav ul li a{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: aqua;
+}
+/*
+---------------------------------------------------
+2. Seccion Inicio 
+*/
+.hero{
+    height: 100vh; /* que ocupe el 100% de la pantalla*/
+    display: flex; /* activando el dysplay flex*/
+    flex-direction: column;/* organiza los elementos en columnas de arriba a abajo*/
+    justify-content: center;/* centra verticalmente los elementos */
+    align-items: center;/*centra horizontalmente los elementos */
+    background: linear-gradient(145deg, rgb(88, 15, 15),#1a1a1a , #333333 );
+}
+
+.hero-contenido{
+    max-width: 800px;/* asigna un ancho maximo*/
+    text-align: center;/* centra todo el texto de contenedor */
+    margin: 0 auto;
+}
+.hero-titulo{
+    font-size: 3rem;/* tamaño de letra*/
+    margin-bottom: 15px;/* margen hacia abajo de 15 px*/
+
+}
+
+.hero-subtitulo{
+    color:aqua;/*color*/ 
+    margin-bottom: 15px;/*margen hacia abajo*/
+    font-size: 1.5rem;/*tamaño de letra*/
+    font-weight: 700;/*grosor de la letra*/
+}
+.hero-descripcion{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    opacity: 0.5;/*opacidad de letra */    
+}
+.hero-eslogan{
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+.hero-foto{
+    width: 160px;
+    height: 160px;
+    border-radius: 30px;
+    object-fit: cover;
+    border: 3px solid aqua;
+    margin-bottom: 20px;
+}
+.hero-estadisticas{
+    display: flex;/*alinar en una sola fila*/
+    justify-content: center;
+    gap: 40px;/*separar, poner un espaciadoe entre elementos*/
+    margin-bottom: 40px;
+    flex-wrap: wrap;/* permite que se pongane en clumna cuando es tamaño movil*/
+}
+
+.esta-item{
+    text-align: center;/*centrar el texto*/
+}
+.esta-numero{
+    display: block;
+    font-size: 2rem ;
+    font-weight: 500;
+    color: aqua;
+    margin-bottom: 5px;
+}
+.esta-nombre{
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.hero-botones{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.btn-whatsapp, .btn-linkedin, .btn-cv{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid;
+}
+.btn-whatsapp{
+    border-color: #25D366;
+    color: #25D366;
+}
+.btn-linkedin{
+    border-color: #0077b5;
+color: #0077b5 ;
+}
+.btn-cv{
+    border-color: chocolate;
+    color: chocolate;
+}
+.hero-nombre{
+    background: linear-gradient(135deg,red, white,red,white,red, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+.hero-nombre:hover{
+    transform: scale(1.2);
+        transition: 0.5s ease;
+}
+
+/*--------------------------------0*/
+/*Sobre */
+.sobre{
+    text-align: center;
+
+}
+.sobre p{
+    max-width: 800px;
+    line-height: 1.8;
+    margin: 0 auto 15px auto;
+}
+section h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+/*---------------------------------------*/
+/*Mis tecnoligias*/
+.tecno{
+    background: #000;
+}
+.tecno h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.tecno-card{
+    padding: 25px;
+    border-radius: 10px;
+    background: rgba(184, 154, 154, 0.09);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.card-titulo{
+    text-align: center;
+    color: aquamarine;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.card-descripcion{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tecno-tecnologias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+

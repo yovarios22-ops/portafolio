@@ -1,31 +1,147 @@
-<!--Yovani-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Yovani</title>
-    
-    <meta property="og.title" content="Portafolio | Yovani">
-    <meta property="og.description" content="Portafolio de Yovani - Desarrollador Web😁🤖😼">
 
-    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="Portafolio | Yovani">
+    <meta property="og:description" content="Portafolio de Yovani - Desarrollador Web😊😁">
+
+    <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="https://code.google.com/images/opensource.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap" rel="stylesheet">
+
     </head>
-<body>
+    <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre Mi</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre">Sobre mi</a></li>
+                <li><a href="#tecno">Mis Tecnologias</a></li>
+                <li><a href="#proyectos">Poyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-</body>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+                <img class="hero-foto" src="foto.png" alt="">
+                <h1 class="hero-titulo">Hola, Soy <span class="hero-nombre">Yovani</span></h1>
+                <p class="hero-subtitulo"> Desarrollador Web Full Stack </p>
+                <p class="hero-descripcion"> Creo experiencias digitales modernas con React, Vue.js, y Laravel.</p>
+                <p class="hero-eslogan"> Tranformando ideas en soluciones web funcionales y escalables</p>
+
+                <div class="hero-estadisticas">
+                    <div class="esta-item">
+                        <span class="esta-numero">+2</span>
+                        <span class="esta-nombre">Años de experiencia</span>
+                    </div>
+                    <div class="esta-item">
+                        <span class="esta-numero">+5</span>
+                        <spa class="esta-nombre">Proyectos completados</span>
+                    </div>
+                    <div class="esta-item">
+                        <span class="esta-numero">+5</span>
+                        <span class="esta-nombre">Tecnologias Dominadas</span>
+                    </div>
+                </div>
+
+                <div class="hero-botones">
+                    <a class="btn-whatsapp" href="https://wa.me/51953353904" target="_blank">WhatsApp</a>
+                    <a class="btn-linkedin"href="">LinkedIn</a>
+                    <a class="btn-cv" href="">Descargar CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un desarrollar web con mas de 2 años de experiencias 
+                creando soluciones digitales. Me
+                 apasiona apredrer nuevas tecnologias y 
+                aplicar las mejores practicas de  desarrolllo en cada proyecto
+            </p>
+            <p>
+                Mi stack principal incluye HTL, CSS, JavaScrip
+                para el frontend y React.js Para aplicaciones en
+                tiempo real, tambien tengo experiencias en tiempo real, 
+                tambien tengo experiencia e base de datos  SQL 
+            </p>
+
+        </section>
+
+        <section id="tecno" class="tecno">
+            <h2>Mis Tecnologias</h2>
+
+            <div class="tecno-tecnologias">
+                <article class="tecno-card">
+                    <h3 class="card-titulo">HTML</h3>
+                    <p class="card-descripcion"> 
+                        Estructura semántica y acccesible
+                         para sitios web modernos.</p>
+                </article>
+                <article class="tecno-card">
+                    <h3 class="card-titulo">CSS</h3>
+                    <p class="card-descripcion">Diseño resposivo animaciones y estilo</p>
+                </article>
+                <article class="tecno-card">
+                    <h3 class="card-titulo">JavaScript</h3>
+                    <p class="card-descripcion">
+                        Programación dinamica e interactiva 
+                        para el cliente.</p>
+                </article>
+
+                <article class="tecno-card">
+                    <h3 class="card-titulo">HTML</h3>
+                    <p class="card-descripcion"> 
+                        Estructura semántica y acccesible
+                         para sitios web modernos.</p>
+                </article>
+                <article class="tecno-card">
+                    <h3 class="card-titulo">CSS</h3>
+                    <p class="card-descripcion">Diseño resposivo animaciones y estilo</p>
+                </article>
+                <article class="tecno-card">
+                    <h3 class="card-titulo">JavaScript</h3>
+                    <p class="card-descripcion">
+                        Programación dinamica e interactiva 
+                        para el cliente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="proyectos"> 
+            <h2>Proyectos</h2>
+            <div>
+                <article>
+                    <h3>Sistema de registro de actividades</h3>
+                    <p>Sistema de gestion de actividadeds</p>
+                    <p>
+                        <strong>Tecnologias:</strong> Java
+                    </p>
+                </article>
+                <article>
+                    <h3>Sistema de citas medicas </h3>
+                    <p>Sistemde administracion de clientes y citas medicas </p>
+                </article>
+                <article>
+                    <h3>Portafolio Personal</h3>
+                    <p>Página Web personal informativa - Portafolio Web</p>
+                    <p>
+                        <strong>Tecnologias:</strong> HTML, CSS, JavaScript.
+                    </p>
+                </article>
+            </div>
+            
+        </section>
+    </main>
+    
+    </body>
 </html>
