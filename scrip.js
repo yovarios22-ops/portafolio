@@ -1,10 +1,23 @@
-const edad =30;
+const edad = 30;
 const esMayorEdad = true;
 const nombre = "Yovani";
 const precio = 99.99
 
-var marca ="Dell"
+console.log(nombre, precio, edad);
 
-console.log(nombre, edad,precio)
+edad + 5;
+console.log(edad);
+console.log("suma: ", 5 + 5);
 
-const
+//&& || !
+if(edad >=18){
+    console.log("mayor de edad");
+}
+else{
+    console.log("menor de edad");
+}
+
+const frutas =["manzana", "pera", "naranja", "fresa"]
+frutas.map((fruta)=>{
+        console.log(fruta);
+});
