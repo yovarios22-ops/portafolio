@@ -144,11 +144,10 @@
 
         <section id="contacto" class="contacto">
             <h2>Contacto</h2>
-            <form action="">
-                <input type="text" placeholder ="Ingresa tu nombre "required >
-                <input type="email" placeholder="Ingresa tu correo " required>
-
-                <textarea rows="6" placeholder="Ingresa tu Mensaje" required></textarea>
+            <form action="" id="formulario-contacto">
+                <input id="nombre" type="text" placeholder ="Ingresa tu nombre "required >
+                <input id="correo" type="email" placeholder="Ingresa tu correo " required>
+                <textarea id="mensaje" rows="10" placeholder="Ingresa tu Mensaje" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </section>
@@ -181,4 +180,5 @@
     </footer>
     </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="scrip.js"></script>
